@@ -72,3 +72,7 @@ SELECT `post`.`title`, `post`.`content`, `user`.`name`
 FROM `post`
 JOIN `user` ON `post`.`user_id` = `user`.`id`
 ```
+
+## Extra
+
+Try to create a query getting all the comments for a post, and the names of the users who commented.
