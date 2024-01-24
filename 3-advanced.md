@@ -18,9 +18,9 @@ CREATE TABLE `post`(
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(45) NULL,
   `content` TEXT(65535) NULL,
-  `users_id` INT NOT NULL,
+  `user_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-    FOREIGN KEY (`users_id`) REFERENCES `user`(`id`)
+    FOREIGN KEY (`user_id`) REFERENCES `user`(`id`)
    );
 
 
@@ -29,7 +29,7 @@ CREATE TABLE comment (
   `content` TEXT(65535) NULL,
   `post_id` INT NOT NULL,
   `user_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `user_id`),
+  PRIMARY KEY (`id`),
     FOREIGN KEY (`post_id`)
     REFERENCES `post`(`id`),
     FOREIGN KEY (`user_id`)
