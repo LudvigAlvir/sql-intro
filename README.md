@@ -166,5 +166,5 @@ Now we want to select all the posts a user have created, and change the user id 
 ```sql
 SELECT `post`.`title`, `post`.`content`, `user`.`name`
 FROM `post`
-JOIN user ON `post`.`user_id` = `user`.`id`
+JOIN `user` ON `post`.`user_id` = `user`.`id`
 ```
