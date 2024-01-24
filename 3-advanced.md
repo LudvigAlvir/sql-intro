@@ -41,9 +41,9 @@ CREATE TABLE comment (
 To insert data into the database we use the `INSERT` statement.
 
 ```sql
-INSERT INTO `user`(`name`, `email`) VALUES ('Ludvig','ludvig@noroff.no')
+INSERT INTO `user`(`name`, `email`) VALUES ('Ludvig','ludvig@test.no')
 
-INSERT INTO `user`(`name`, `email`) VALUES ('Eivind','eivind@noroff.no')
+INSERT INTO `user`(`name`, `email`) VALUES ('Eivind','eivind@test.no')
 
 ```
 
