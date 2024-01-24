@@ -75,4 +75,10 @@ JOIN `user` ON `post`.`user_id` = `user`.`id`
 
 ## Extra
 
-Try to create a query getting all the comments for a post, and the names of the users who commented.
+### Task 1
+
+Create a query getting all the comments for a post, and the names of the users who commented.
+
+### Task 2
+
+Create a query getting all posts a user has commented on.
