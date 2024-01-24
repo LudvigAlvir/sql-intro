@@ -164,7 +164,7 @@ Create a few more users, and posts.
 Now we want to select all the posts a user have created, and change the user id to the users name.
 
 ```sql
-SELECT post.title, post.content, user.name
-FROM post
-JOIN user ON post.users_id = user.id
+SELECT `post`.`title`, `post`.`content`, `user`.`name`
+FROM `post`
+JOIN user ON `post`.`user_id` = `user`.`id`
 ```
