@@ -85,6 +85,13 @@ WHERE title like '%se%'
 % sign is a wildcard, so it will return all posts that have the letters se in the title. No matter what is before or after those letters.
 Try a new query with the % sign in different places.
 
+To delete a table we use the `DROP` statement.
+
+<!-- prettier-ignore -->
+```sql
+DROP TABLE post;
+```
+
 ![Database model to create](./2-model.png)
 
 # Creating the database from model
