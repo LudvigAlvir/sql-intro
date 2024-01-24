@@ -146,13 +146,13 @@ INSERT INTO `user`(`name`, `email`) VALUES ('Eivind','eivind@test.no')
 ## Creating posts
 
 ```sql
-INSERT INTO `post`(`title`, `content`, `users_id`) VALUES ('test','første test','3')
+INSERT INTO `post`(`title`, `content`, `user_id`) VALUES ('test','første test','3')
 ```
 
 This insert statement will fail because we have a foreign key constraint on the `users_id` column. This means that the value we insert into the `users_id` column must exist in the `id` column of the `user` table. Since we only have created two users with the id's 1 and 2, we can't insert the value 3 into the `users_id` column.
 
 ```sql
-INSERT INTO `post`(`title`, `content`, `users_id`) VALUES ('test','første test','1')
+INSERT INTO `post`(`title`, `content`, `user_id`) VALUES ('test','første test','1')
 ```
 
 This will work, since the user "Ludvig" has the id 1.
