@@ -29,7 +29,7 @@ Then create a table called `post` with the collums `id`, `title` and `body`
 
 ```sql
   CREATE TABLE post (
-    id INT(6) AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     body TEXT(65535) NOT NULL
   );
